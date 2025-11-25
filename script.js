@@ -14,6 +14,18 @@ document.getEventListener("DOMContentLoaded", function () {
     "form submission failed",
     "push",
   ];
+  if (usernameInput.length < 3) {
+    isValid = false;
+    messages.push("Username must be at least 3 characters long.");
+  }
+  if (!emailInput.includes("@") && !emailInput.includes(".")) {
+    isValid = false;
+    messages.push("Please enter a valid email address.");
+  }
+  if (passwordInput.length < 8) {
+    isValid = false;
+    messages.push("Password must be at least 8 characters long.");
+  }
   form.addEventListener("submit", function (event) {
     event.preventDefault();
   });
