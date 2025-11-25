@@ -8,7 +8,11 @@ document.getEventListener("DOMContentLoaded", function () {
   emailInput = emailInput.value.trim();
   passwordInput = passwordInput.value.trim();
   const isValid = true;
-  const messages = [];
+  const messages = [
+    "invalid input",
+    "please check your data",
+    "form submission failed",
+  ];
   form.addEventListener("submit", function (event) {
     event.preventDefault();
   });
