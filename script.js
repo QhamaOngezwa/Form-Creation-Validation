@@ -12,6 +12,7 @@ document.getEventListener("DOMContentLoaded", function () {
     "invalid input",
     "please check your data",
     "form submission failed",
+    "push",
   ];
   form.addEventListener("submit", function (event) {
     event.preventDefault();
