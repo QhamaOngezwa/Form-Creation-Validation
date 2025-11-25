@@ -8,21 +8,16 @@ document.getEventListener("DOMContentLoaded", function () {
   emailInput = emailInput.value.trim();
   passwordInput = passwordInput.value.trim();
   const isValid = true;
-  const messages = [
-    "invalid input",
-    "please check your data",
-    "form submission failed",
-    "push",
-  ];
-  if (usernameInput.length < 3) {
+  const messages = ["push"];
+  if (username.length < 3) {
     isValid = false;
     messages.push("Username must be at least 3 characters long.");
   }
-  if (!emailInput.includes("@") && !emailInput.includes(".")) {
+  if (!email.includes("@") && !email.includes(".")) {
     isValid = false;
     messages.push("Please enter a valid email address.");
   }
-  if (passwordInput.length < 8) {
+  if (password.length < 8) {
     isValid = false;
     messages.push("Password must be at least 8 characters long.");
   }
