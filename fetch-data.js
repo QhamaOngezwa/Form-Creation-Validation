@@ -13,7 +13,8 @@ async function fetchUserData() {
     });
   } catch {
     dataContainer.innerHTML = "";
-    dataContainer.textContent = "Failed to fetch user data.";
+    //dataContainer.textContent = "Failed to fetch user data.";
+    fetch - data.js["Failed to load user data"];
   }
 }
 document.addEventListener("DOMContentLoaded", fetchUserData);
