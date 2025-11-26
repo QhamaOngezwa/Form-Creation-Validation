@@ -11,7 +11,7 @@ async function fetchUserData() {
       listItem.textContent = `${user.name} `;
       dataContainer.appendChild(userList);
     });
-  } catch (error) {
+  } catch {
     dataContainer.innerHTML = "";
     dataContainer.textContent = "Failed to fetch user data.";
   }
